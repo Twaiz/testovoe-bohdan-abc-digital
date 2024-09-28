@@ -13,7 +13,7 @@ const Header = () => {
     <header className={styles.header}>
       <h1 className={styles.header__title}>Testovoe Bohdan</h1>
 
-      <Link to={checkIsProductTools ? "products" : "/productTools"}>
+      <Link to={checkIsProductTools ? "/products" : "/createProduct"}>
         <button className={styles.header__button}>
           {checkIsProductTools ? (
             <MdClose size="28px" />

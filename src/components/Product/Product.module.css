@@ -1,0 +1,136 @@
+@import "/src/styles/Variables.module.css";
+
+.product {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 12px;
+  padding: 10px;
+
+  width: 24%;
+
+  border-radius: 10px;
+  border: 1px solid var(--color-light-grey);
+}
+
+@media screen and (max-width: 1170px) {
+  .product {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .product {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.productPreview {
+  width: 100%;
+}
+
+.product__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 200px;
+
+  border-radius: 5px;
+
+  object-fit: contain;
+}
+
+.product__emptyImage {
+  width: 100%;
+  min-height: 200px;
+
+  border-radius: 5px;
+
+  background-color: var(--color-light-grey);
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  row-gap: 12px;
+  height: 100%;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 5px;
+}
+
+.productInfo__name {
+  font-weight: 500;
+  font-size: 20px;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  color: var(--color-dark-text);
+}
+
+.productInfo__description {
+  font-weight: 400;
+  font-size: 16px;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  color: var(--color-dark-grey);
+}
+
+.productDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  column-gap: 8px;
+}
+
+.productDetails__price {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(--color-dark-text);
+}
+
+.productDetails__quantity {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(--color-dark-text);
+}
+
+.product__button {
+  position: absolute;
+  right: -10px;
+
+  padding: 5px;
+
+  border-style: none;
+  background-color: transparent;
+}
+` .product__button .tools {
+  display: none;
+}
+
+.product__button:focus-within .tools {
+  display: block;
+  position: absolute;
+}

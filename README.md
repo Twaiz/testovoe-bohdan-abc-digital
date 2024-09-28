@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Тестове Богдан - ABC Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Технології
 
-Currently, two official plugins are available:
+У проєкті використано наступний стек:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **TypeScript** - для забезпечення надійності та безпеки коду.
+- **React** - для створення компонентного інтерфейсу.
+- **React Router** - для реалізації маршрутизації в додатку.
+- **Mobx-react-lite** - для зберігання данних  
+- **Json-server** - для запуску JSON сервера
+- **Module.css** - для модульного стилізування компонентів.
+- **React-icons** - для іконок
+- **Використана архітектура** - Atomic Design Pattern
+- **Використан BEM** - block\_\_element--modificator
 
-## Expanding the ESLint configuration
+## Запуск проєкту
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Щоб запустити проєкт локально, виконайте наступні кроки:
 
-- Configure the top-level `parserOptions` property like this:
+1. Клонуйте репозиторій:
+   ```bash
+   git clone https://github.com/Twaiz/testovoe-bohdan-abc-digital
+   ```
+2. Перейдіть у директорію проєкту:
+   ```bash
+   cd your-repo
+   ```
+3. Встановіть залежності:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   npm install
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Запустіть локальний сервер товарів:
+   ```bash
+   npm run server
+   ```
+5. Запустіть локальний сервер:
+   ```bash
+   npm run dev
+   ```

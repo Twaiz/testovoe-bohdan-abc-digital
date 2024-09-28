@@ -9,6 +9,8 @@ interface IInputProps {
   required?: boolean;
   initialValue?: string;
   onChange?: (value: string) => void;
+  minValue?: string;
+  maxValue?: string;
 }
 
 const Input = (props: IInputProps) => {
@@ -19,6 +21,8 @@ const Input = (props: IInputProps) => {
     required = true,
     initialValue = "",
     onChange,
+    minValue = "0",
+    maxValue = "",
   } = props;
 
   const [value, setValue] = useState(initialValue);
@@ -36,6 +40,8 @@ const Input = (props: IInputProps) => {
       placeholder={placeholder}
       required={required}
       className={styles.input}
+      min={minValue}
+      max={maxValue}
     />
   );
 };

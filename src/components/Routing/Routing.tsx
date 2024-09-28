@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-const AppLayout = lazy(() => import(""));
+const AppLayout = lazy(() => import("@/ui/AppLayout"));
 const PageNotFound = lazy(() => import(""));
 const Products = lazy(() => import(""));
 const EditProduct = lazy(() => import(""));

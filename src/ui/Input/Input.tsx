@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import styles from "./Input.module.css";
+
 interface IInputProps {
   type?: string;
   name?: string;
@@ -33,6 +35,7 @@ const Input = (props: IInputProps) => {
       name={name}
       placeholder={placeholder}
       required={required}
+      className={styles.input}
     />
   );
 };

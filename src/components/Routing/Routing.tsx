@@ -12,6 +12,7 @@ const Products = lazy(() => import("@/pages/Products"));
 // const EditProduct = lazy(() => import(""));
 const CreateProduct = lazy(() => import("@/pages/CreateProduct"));
 
+import { createProductAction } from "@/actions";
 // import { EditProductAction as editProductAction } from "";
 
 const router = createBrowserRouter([
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       {
         path: "createProduct",
         element: <CreateProduct />,
+        action: createProductAction,
       },
       {
         path: "*",

@@ -2,6 +2,8 @@ import { FaEllipsisV } from "react-icons/fa";
 
 import styles from "./Product.module.css";
 
+type ProductType = "basic" | "preview";
+
 interface IProduct {
   id: number;
   productName: string;
@@ -12,13 +14,27 @@ interface IProduct {
   image: string;
 }
 
-const Product = ({ product }: { product: IProduct }) => {
+interface IProductProps {
+  product: IProduct;
+  productType?: ProductType;
+}
+
+const Product = (props: IProductProps) => {
+  const { product, productType = "basic" } = props;
   const { productName, description, price, currency, quantity, image } =
     product;
 
   return (
-    <li className={styles.product}>
-      <img src={image} alt={productName} className={styles.product__image} />
+    <li
+      className={`${styles.product} ${
+        productType === "preview" ? styles.productPreview : ""
+      }`}
+    >
+      {image.length > 0 ? (
+        <img src={image} alt={productName} className={styles.product__image} />
+      ) : (
+        <div className={styles.product__emptyImage} />
+      )}
 
       <div className={styles.wrapper}>
         <div className={styles.productInfo}>
@@ -33,9 +49,11 @@ const Product = ({ product }: { product: IProduct }) => {
           <span className={styles.productDetails__quantity}>{quantity}</span>
         </div>
 
-        <button type="button" className={styles.product__button}>
-          <FaEllipsisV />
-        </button>
+        {productType !== "preview" && (
+          <button type="button" className={styles.product__button}>
+            <FaEllipsisV />
+          </button>
+        )}
       </div>
     </li>
   );

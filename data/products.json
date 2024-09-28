@@ -89,51 +89,6 @@
       "currency": "ГРН",
       "quantity": "25",
       "image": "https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a546elgasek/gallery/ua-galaxy-a54-5g-sm-a546-sm-a546elgasek-535853644?$650_519_PNG$"
-    },
-    {
-      "id": 11,
-      "productName": "Oppo A58",
-      "description": "8GB RAM, 128GB",
-      "price": "7499",
-      "currency": "ГРН",
-      "quantity": "4",
-      "image": ""
-    },
-    {
-      "id": 12,
-      "productName": "asd",
-      "description": "asdasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
-      "price": "12121",
-      "currency": "ГРН",
-      "quantity": "78",
-      "image": ""
-    },
-    {
-      "id": 13,
-      "productName": "asdasd",
-      "description": "asd",
-      "price": "12",
-      "currency": "asdasd",
-      "quantity": "12",
-      "image": ""
-    },
-    {
-      "id": 14,
-      "productName": "Oppo A58",
-      "description": "8GB RAM, 128GB",
-      "price": "12.525",
-      "currency": "ГРН",
-      "quantity": "2",
-      "image": ""
-    },
-    {
-      "id": 15,
-      "productName": "asdasdasdassadsasad",
-      "description": "asasdasdsad",
-      "price": "4",
-      "currency": "asadasdasd",
-      "quantity": "7",
-      "image": ""
     }
   ]
 }

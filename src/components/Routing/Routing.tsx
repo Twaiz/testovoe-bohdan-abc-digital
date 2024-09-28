@@ -10,10 +10,9 @@ const PageNotFound = lazy(() => import("@/pages/PageNotFound"));
 
 const Products = lazy(() => import("@/pages/Products"));
 // const EditProduct = lazy(() => import(""));
-// const CreateProduct = lazy(() => import(""));
+const CreateProduct = lazy(() => import("@/pages/CreateProduct"));
 
 // import { EditProductAction as editProductAction } from "";
-// import { CreateProductAction as createProductAction } from "";
 
 const router = createBrowserRouter([
   {
@@ -33,11 +32,10 @@ const router = createBrowserRouter([
       //   element: <EditProduct />,
       //   // action: editProductAction,
       // },
-      // {
-      //   path: "createProduct",
-      //   element: <CreateProduct />,
-      //   // action: createProductAction,
-      // },
+      {
+        path: "createProduct",
+        element: <CreateProduct />,
+      },
       {
         path: "*",
         element: <PageNotFound />,

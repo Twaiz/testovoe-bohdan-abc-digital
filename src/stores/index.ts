@@ -1,3 +1,4 @@
 import productsStore from "./productsStore";
+import createProductStore from "./createProductStore";
 
-export { productsStore };
+export { productsStore, createProductStore };

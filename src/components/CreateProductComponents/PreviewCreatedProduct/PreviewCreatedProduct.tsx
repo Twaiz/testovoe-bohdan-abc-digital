@@ -1,27 +1,18 @@
 import { observer } from "mobx-react-lite";
 
-import { createProductStore } from "@/stores";
 import styles from "./PreviewCreatedProduct.module.css";
 
-import Product from "@/components/Product";
+import { createProductStore } from "@/stores";
+import helpers from "@/tools/helpers";
 
-function formatNumber(num: string) {
-  const [integerPart, decimalPart] = num.split(".");
-  const formattedIntegerPart = integerPart.replace(
-    /\B(?=(\d{3})+(?!\d))/g,
-    "."
-  );
-  return decimalPart
-    ? `${formattedIntegerPart},${decimalPart}`
-    : formattedIntegerPart;
-}
+import Product from "@/components/Product";
 
 const PreviewCreatedProduct = observer(() => {
   const product = {
     id: createProductStore.productName.length,
     productName: createProductStore.productName,
     description: createProductStore.description,
-    price: formatNumber(createProductStore.price),
+    price: helpers.formatNumber(createProductStore.price),
     currency: createProductStore.currency,
     quantity: createProductStore.quantity,
     image: "",

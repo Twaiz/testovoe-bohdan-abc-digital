@@ -10,7 +10,7 @@ interface IProduct {
   image: string;
 }
 
-const BASE_URL = "http://localhost:7777";
+export const BASE_URL = "http://localhost:7777";
 
 class ProductsStore {
   products: IProduct[];

@@ -37,6 +37,7 @@ const FormProduct = () => {
           name="quantity"
           onChange={(value) => createProductStore.setQuantity(value)}
         />
+        <input value="" name="image" hidden />
       </div>
 
       <Button type="submit" text="Зберегти" buttonStyle="submit" />

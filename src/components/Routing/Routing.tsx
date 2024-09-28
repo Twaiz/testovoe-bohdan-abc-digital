@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 
 const AppLayout = lazy(() => import("@/ui/AppLayout"));
-const PageNotFound = lazy(() => import(""));
+const PageNotFound = lazy(() => import("@/pages/PageNotFound"));
+
 const Products = lazy(() => import(""));
 const EditProduct = lazy(() => import(""));
 const CreateProduct = lazy(() => import(""));
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: "createProduct",
         element: <CreateProduct />,
         action: createProductAction,
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
       },
     ],
   },

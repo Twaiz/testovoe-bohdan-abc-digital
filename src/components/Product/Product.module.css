@@ -59,6 +59,11 @@
   font-weight: 500;
   font-size: 20px;
 
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: auto;
+
   color: var(--color-dark-text);
 }
 
@@ -66,6 +71,12 @@
   font-weight: 400;
   font-size: 16px;
 
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: auto;
+
+  background-color: aqua;
   color: var(--color-dark-grey);
 }
 

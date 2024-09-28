@@ -33,6 +33,10 @@ class ProductsStore {
     this.error = error;
   }
 
+  setProducts(products: IProduct[]) {
+    this.products = products;
+  }
+
   async getProducts() {
     try {
       this.setIsLoading(true);
@@ -45,13 +49,9 @@ class ProductsStore {
         );
       }
 
-      const data = await res.json();
+      const data: IProduct[] = await res.json();
 
-      if (!data.products || !Array.isArray(data.products)) {
-        throw new Error("Дані не в правильному форматі");
-      }
-
-      this.products = data.products;
+      this.setProducts(data);
     } catch (err) {
       this.setError(err instanceof Error ? err.message : "Невідома помилка");
       console.error(err);

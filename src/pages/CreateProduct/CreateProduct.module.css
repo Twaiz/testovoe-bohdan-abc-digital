@@ -1,0 +1,14 @@
+.createProduct {
+  display: flex;
+  column-gap: 25px;
+
+  padding-inline: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .createProduct {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}

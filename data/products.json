@@ -6,7 +6,8 @@
       "description": "Retina, Space Gray, Apple M2, 256Gb, 8 CPU, 8GB RAM",
       "price": "39.899",
       "currency": "ГРН",
-      "quantity": "9"
+      "quantity": "9",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2022/06/062308/macbook-air-starlight-gallery1-2-1397x1397.jpg.webp"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "description": "Retina, Midnight, Apple M2, 512GB, 8 CPU, 24GB RAM",
       "price": "83 .00",
       "currency": "ГРН",
-      "quantity": "15"
+      "quantity": "15",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2022/06/062308/macbook-air-midnight-gallery1-20-1397x1397.jpg.webp"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "description": "Space Black, Apple M3, 512GB, 12 CPU, 18GB RAM",
       "price": "95.999",
       "currency": "ГРН",
-      "quantity": "4"
+      "quantity": "4",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2023/10/310825/mbp16-spaceblack-12023-1397x1397.jpg.webp"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "description": "AMD Ryzen 7, 2TB, 16GB RAM",
       "price": "48.159",
       "currency": "ГРН",
-      "quantity": "3"
+      "quantity": "3",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2024/08/281035/56fg-1397x1397.png.webp"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "description": "AMS Ryzen 9, 2TB, 32GB RAM",
       "price": "193.499",
       "currency": "ГРН",
-      "quantity": "1"
+      "quantity": "1",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2024/04/061107/45dvsd-1397x1397.jpg.webp"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "description": "6.1 inch, 256GB, A16 Bionic, Space Black",
       "price": "49.999",
       "currency": "ГРН",
-      "quantity": "10"
+      "quantity": "10",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2023/07/041102/space-black-1-1397x1397.jpg-1397x1397.jpg.webp"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "description": "6.1 inch, 128GB, A15 Bionic, Blue",
       "price": "36.999",
       "currency": "ГРН",
-      "quantity": "12"
+      "quantity": "12",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2022/09/072335/photo_2022-09-07_23-29-19-1397x1397.jpg.webp"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "description": "4.7 inch, 64GB, A15 Bionic, Midnight",
       "price": "21.999",
       "currency": "ГРН",
-      "quantity": "20"
+      "quantity": "20",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2022/04/081724/iphone-se-midnight-select-202203-1397x1397.jpg.webp"
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "description": "6.1 inch, 128GB, Snapdragon 8 Gen 2, Phantom Black",
       "price": "34.999",
       "currency": "ГРН",
-      "quantity": "15"
+      "quantity": "15",
+      "image": "https://img.jabko.ua/image/cache/catalog/products/2023/08/221331/_xcb%20zbb-1397x1397.jpg.webp"
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "description": "6.4 inch, 128GB, Exynos 1380, Awesome White",
       "price": "19.999",
       "currency": "ГРН",
-      "quantity": "25"
+      "quantity": "25",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a546elgasek/gallery/ua-galaxy-a54-5g-sm-a546-sm-a546elgasek-535853644?$650_519_PNG$"
     }
   ]
 }

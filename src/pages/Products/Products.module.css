@@ -1,7 +1,6 @@
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 15px;
 
@@ -9,4 +8,22 @@
   margin-bottom: 20px;
 
   width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
 }

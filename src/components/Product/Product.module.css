@@ -126,3 +126,11 @@
   border-style: none;
   background-color: transparent;
 }
+` .product__button .tools {
+  display: none;
+}
+
+.product__button:focus-within .tools {
+  display: block;
+  position: absolute;
+}

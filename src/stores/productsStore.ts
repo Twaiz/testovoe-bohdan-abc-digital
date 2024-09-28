@@ -59,6 +59,28 @@ class ProductsStore {
       this.setIsLoading(false);
     }
   }
+
+  async deleteProduct(id: number) {
+    try {
+      this.setIsLoading(true);
+
+      const res = await fetch(`${BASE_URL}/products/${id}`, {
+        method: "DELETE",
+      });
+      if (!res.ok) {
+        throw new Error(
+          "Щось пішло не так 😣... Перевірте поєднання з інтернетом"
+        );
+      }
+
+      this.setProducts(this.products.filter((product) => product.id !== id));
+    } catch (err) {
+      this.setError(err instanceof Error ? err.message : "Невідома помилка");
+      console.error(err);
+    } finally {
+      this.setIsLoading(false);
+    }
+  }
 }
 
 const productsStore = new ProductsStore();

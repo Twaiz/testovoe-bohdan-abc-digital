@@ -1,6 +1,9 @@
-import { FaEllipsisV } from "react-icons/fa";
-
 import styles from "./Product.module.css";
+
+import { FaEllipsisV } from "react-icons/fa";
+import { MdOutlineDeleteForever } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
+import { productsStore } from "@/stores";
 
 type ProductType = "basic" | "preview";
 
@@ -21,7 +24,7 @@ interface IProductProps {
 
 const Product = (props: IProductProps) => {
   const { product, productType = "basic" } = props;
-  const { productName, description, price, currency, quantity, image } =
+  const { id, productName, description, price, currency, quantity, image } =
     product;
 
   return (
@@ -52,6 +55,24 @@ const Product = (props: IProductProps) => {
         {productType !== "preview" && (
           <button type="button" className={styles.product__button}>
             <FaEllipsisV />
+
+            <div className={styles.tools}>
+              <ul className={styles.listTools}>
+                <li className={styles.itemTool}>
+                  <button
+                    className={styles.itemTool__button}
+                    onClick={() => productsStore.deleteProduct(Number(id))}
+                  >
+                    <MdOutlineDeleteForever />
+                  </button>
+                </li>
+                <li className={styles.itemTool}>
+                  <button className={styles.itemTool__button}>
+                    <FaEdit />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </button>
         )}
       </div>

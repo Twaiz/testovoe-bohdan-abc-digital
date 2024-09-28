@@ -1,23 +1,37 @@
-import Product from "@/components/Product";
+import { observer } from "mobx-react-lite";
+
+import { createProductStore } from "@/stores";
 import styles from "./PreviewCreatedProduct.module.css";
 
-const product = {
-  id: 1,
-  productName: "Oppo A58",
-  description: "asdasdasdadsasd",
-  price: "7.500",
-  currency: "ГРН",
-  quantity: "2",
-  image:
-    "https://img.jabko.ua/image/cache/catalog/products/2022/06/062308/macbook-air-starlight-gallery1-2-1397x1397.jpg.webp",
-};
+import Product from "@/components/Product";
 
-const PreviewCreatedProduct = () => {
+function formatNumber(num: string) {
+  const [integerPart, decimalPart] = num.split(".");
+  const formattedIntegerPart = integerPart.replace(
+    /\B(?=(\d{3})+(?!\d))/g,
+    "."
+  );
+  return decimalPart
+    ? `${formattedIntegerPart},${decimalPart}`
+    : formattedIntegerPart;
+}
+
+const PreviewCreatedProduct = observer(() => {
+  const product = {
+    id: createProductStore.productName.length,
+    productName: createProductStore.productName,
+    description: createProductStore.description,
+    price: formatNumber(createProductStore.price),
+    currency: createProductStore.currency,
+    quantity: createProductStore.quantity,
+    image: "",
+  };
+
   return (
     <div className={styles.previewCreatedProduct}>
       <Product product={product} productType="preview" />
     </div>
   );
-};
+});
 
 export default PreviewCreatedProduct;

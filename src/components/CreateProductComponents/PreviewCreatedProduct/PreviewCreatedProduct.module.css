@@ -2,6 +2,7 @@
 
 .previewCreatedProduct {
   width: 100%;
+  max-width: 50%;
 }
 
 @media screen and (min-width: 1440px) {

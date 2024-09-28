@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Macbook Air 13",
+      "description": "Retina, Space Gray, Apple M2, 256Gb, 8 CPU, 8GB RAM",
+      "price": "39 899",
+      "quantity": "9"
+    },
+    {
+      "id": 2,
+      "productName": "Macbook Air 13",
+      "description": "Retina, Midnight, Apple M2, 512GB, 8 CPU, 24GB RAM",
+      "price": "83 200",
+      "quantity": "15"
+    },
+    {
+      "id": 3,
+      "productName": "Macbook Pro 16",
+      "description": "Space Black, Apple M3, 512GB, 12 CPU, 18GB RAM",
+      "price": "95 999",
+      "quantity": "4"
+    },
+    {
+      "id": 4,
+      "productName": "Asus Zenbook 14",
+      "description": "AMD Ryzen 7, 2TB, 16GB RAM",
+      "price": "48 159",
+      "quantity": "3"
+    },
+    {
+      "id": 5,
+      "productName": "ASUS ROG Strix SCAR 17",
+      "description": "AMS Ryzen 9, 2TB, 32GB RAM",
+      "price": "193 499",
+      "quantity": "1"
+    },
+    {
+      "id": 6,
+      "productName": "iPhone 14 Pro",
+      "description": "6.1 inch, 256GB, A16 Bionic, Space Black",
+      "price": "49 999",
+      "quantity": "10"
+    },
+    {
+      "id": 7,
+      "productName": "iPhone 14",
+      "description": "6.1 inch, 128GB, A15 Bionic, Blue",
+      "price": "36 999",
+      "quantity": "12"
+    },
+    {
+      "id": 8,
+      "productName": "iPhone SE (3rd Gen)",
+      "description": "4.7 inch, 64GB, A15 Bionic, Midnight",
+      "price": "21 999",
+      "quantity": "20"
+    },
+    {
+      "id": 9,
+      "productName": "Samsung Galaxy S23",
+      "description": "6.1 inch, 128GB, Snapdragon 8 Gen 2, Phantom Black",
+      "price": "34 999",
+      "quantity": "15"
+    },
+    {
+      "id": 10,
+      "productName": "Samsung Galaxy A54",
+      "description": "6.4 inch, 128GB, Exynos 1380, Awesome White",
+      "price": "19 999",
+      "quantity": "25"
+    }
+  ]
+}

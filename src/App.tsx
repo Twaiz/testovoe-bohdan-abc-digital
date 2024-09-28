@@ -1,7 +1,16 @@
-import "./styles/Variables.module.css";
+import { Suspense } from "react";
+
+import Loader from "";
+import Routing from "./components/Routing";
+
+import "./styles/Main.module.css";
 
 const App = () => {
-  return <h1>Here have will been routing</h1>;
+  return (
+    <Suspense fallback={<Loader />}>
+      <Routing />
+    </Suspense>
+  );
 };
 
 export default App;

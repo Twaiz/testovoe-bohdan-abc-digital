@@ -45,9 +45,13 @@
 .wrapper {
   position: relative;
   display: flex;
+
   flex-direction: column;
+  justify-content: space-between;
 
   row-gap: 12px;
+
+  height: 100%;
 }
 
 .productInfo {
@@ -59,14 +63,14 @@
 
 .productInfo__name {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
 
   color: var(--color-dark-text);
 }
 
 .productInfo__description {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 
   color: var(--color-dark-grey);
 }

@@ -1,13 +1,11 @@
 @import "/src/styles/Variables.module.css";
 
 .previewCreatedProduct {
-  width: 40%;
-  max-width: 40%;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1440px) {
   .previewCreatedProduct {
-    width: 100%;
-    max-width: 100%;
+    width: 40%;
   }
 }

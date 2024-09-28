@@ -21,6 +21,10 @@
   color: var(--color-light-bg);
 }
 
+.button--submit {
+  width: 100%;
+}
+
 .button:disabled {
   cursor: not-allowed;
   opacity: 0.4;

@@ -1,0 +1,27 @@
+@import "/src/styles/Variables.module.css";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-bg);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}

@@ -1,29 +1,11 @@
 .products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 
   gap: 15px;
 
   padding-inline: 24px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   width: 100%;
-}
-
-@media screen and (min-width: 1440px) {
-  .products {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-  }
 }
